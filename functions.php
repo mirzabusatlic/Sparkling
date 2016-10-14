@@ -18,7 +18,7 @@ if ( ! isset( $content_width ) ) {
 function sparkling_content_width() {
   if ( is_page_template( 'page-fullwidth.php' ) ) {
     global $content_width;
-    $content_width = 1008; /* pixels */
+    $content_width = 908; /* pixels */
   }
 }
 add_action( 'template_redirect', 'sparkling_content_width' );

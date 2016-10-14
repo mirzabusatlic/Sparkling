@@ -18,7 +18,7 @@ if ( ! isset( $content_width ) ) {
 function sparkling_content_width() {
   if ( is_page_template( 'page-fullwidth.php' ) ) {
     global $content_width;
-    $content_width = 908; /* pixels */
+    $content_width = 1008; /* pixels */
   }
 }
 add_action( 'template_redirect', 'sparkling_content_width' );
@@ -29,7 +29,7 @@ if ( ! function_exists( 'sparkling_main_content_bootstrap_classes' ) ) :
  */
 function sparkling_main_content_bootstrap_classes() {
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
-		return 'col-sm-12 col-md-10';
+		return 'col-sm-12 col-md-12';
 	}
 	return 'col-sm-12 col-md-8';
 }
@@ -61,7 +61,7 @@ function sparkling_setup() {
    */
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size( 'sparkling-featured', 945, 550, true );
+  add_image_size( 'sparkling-featured', 750, 410, true );
   add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 
   // This theme uses wp_nav_menu() in one location.

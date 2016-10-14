@@ -50,15 +50,6 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     url('https://www.watermark.ws/fonts/proximanova/proximanova-light-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
-@font-face {
-    font-family: "proxima-nova-bold";
-    src: url('https://www.watermark.ws/fonts/proximanova/proximanova-semibold-webfont.eot'); /* IE9 Compact Modes */
-    src: url('https://www.watermark.ws/fonts/proximanova/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('https://www.watermark.ws/fonts/proximanova/proximanova-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-    url('https://www.watermark.ws/fonts/proximanova/proximanova-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('https://www.watermark.ws/fonts/proximanova/proximanova-semibold-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
 body {
   color: #6B6B6B;
   background-color: #F2F2F2;
@@ -398,7 +389,7 @@ hr.section-divider {
   margin-bottom: 50px;
 }
 .post-inner-content {
-  padding: 45px 50px;
+  padding: 50px 100px;
   background-color: #fff;
   border: 1px solid #dadada;
   border-top: none;

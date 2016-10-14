@@ -28,9 +28,15 @@ if ( ! function_exists( 'sparkling_main_content_bootstrap_classes' ) ) :
  * Add Bootstrap classes to the main-content-area wrapper.
  */
 function sparkling_main_content_bootstrap_classes() {
+
+    if( get_layout_class() == 'no-sidebar' ) {
+        return 'col-sm-12 col-md-10';
+    }
+
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
 		return 'col-sm-12 col-md-12';
 	}
+
 	return 'col-sm-12 col-md-8';
 }
 endif; // sparkling_main_content_bootstrap_classes
@@ -61,7 +67,7 @@ function sparkling_setup() {
    */
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size( 'sparkling-featured', 750, 410, true );
+  add_image_size( 'sparkling-featured', 945, 545, true );
   add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 
   // This theme uses wp_nav_menu() in one location.

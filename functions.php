@@ -61,7 +61,7 @@ function sparkling_setup() {
    */
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size( 'sparkling-featured', 750, 410, true );
+  add_image_size( 'sparkling-featured', 945, 550, true );
   add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 
   // This theme uses wp_nav_menu() in one location.
